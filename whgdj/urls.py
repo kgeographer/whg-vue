@@ -6,14 +6,11 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-
-    # Vue single page app
-    path('', TemplateView.as_view(template_name='whgdj/spa.html'), name='home'),
-
     # Django
-    path('search/', view=TemplateView.as_view(template_name='whgdj/search.html'), name='search'),
-    path('blog/', include('blog.urls')),
+    path('admin/', admin.site.urls),
     path('api/',include('api.urls')),
-    path('about/', TemplateView.as_view(template_name='whgdj/about.html'), name='about'),
+
+    # catchall to Vue single page app
+    url(r'^.*$', TemplateView.as_view(template_name='whgdj/spa.html'), name='home'),
+
 ]

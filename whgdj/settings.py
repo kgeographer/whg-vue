@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog',
+    'api',
     'webpack_loader',
     'django.contrib.admin',
     'django.contrib.auth',

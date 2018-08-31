@@ -1,21 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+import Home from '@/components/Home'
 import About from '@/components/About'
+import Blog from '@/components/Blog'
+import Search from '@/components/Search'
+import Contribute from '@/components/Contribute'
+import UsingAPI from '@/components/UsingAPI'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/about',
-      name: 'About',
-      component: About
-    }
+    {path: '/usingapi', component: UsingAPI},
+    {path: '/contribute', component: Contribute},
+    {path: '/search', component: Search},
+    {path: '/blog', component: Blog},
+    {path: '/about', component: About},
+    {path: '/', component: Home}
   ]
 })

@@ -11,6 +11,7 @@ selenium-debug.log
 webpack-stats.json
 public/
 dist/
+dumps/
 
 ### Django ###
 *.log

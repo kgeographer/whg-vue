@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
+    'leaflet',
 ]
 
 MIDDLEWARE = [
@@ -99,14 +100,27 @@ WEBPACK_LOADER = {
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'whg',
+        'USER':'karlg',
+        'PASSWORD':'th!smustw0rk',
+        'HOST':'localhost',
+        'PORT':'5432',
+    },
+    'review': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'whgreview',
+        'USER':'karlg',
+        'PASSWORD':'th!smustw0rk',
+        'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 
+# not yet...nec. only for review app
+# DATABASE_ROUTERS = ('whgdj.dbrouters.whgDBRouter',)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

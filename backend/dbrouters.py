@@ -1,4 +1,4 @@
-from review.models import BlackMatch, Related, Place, Country
+from review.models import Related, Place, Country
 
 class MyDBRouter(object):
 

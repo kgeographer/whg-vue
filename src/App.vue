@@ -1,13 +1,23 @@
 <template>
   <div id="app">
+    <div>
+    <router-link to="/">Home</router-link>
+    <router-link to="/search">Search/Map</router-link>
+    <router-link to="/blog">Blog</router-link>
+    <router-link to="/contribute">Contribute</router-link>
+    <router-link to="/usingapi">API</router-link>
+    <router-link to="/about">About</router-link>
+  </div>
   <router-view></router-view>
   </div>
 </template>
 
 <script>
+var module = require('bootstrap')
 export default {
   name: 'App'
 }
+console.clear()
 </script>
 
 <style>

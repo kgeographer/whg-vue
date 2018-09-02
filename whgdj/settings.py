@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'leaflet',
+    # 'haystack',
 ]
 
 MIDDLEWARE = [
@@ -119,9 +120,17 @@ DATABASES = {
         'PORT':'5432',
     }
 }
-
 # not yet...nec. only for review app
 # DATABASE_ROUTERS = ('whgdj.dbrouters.whgDBRouter',)
+
+
+# HAYSTACK_CONNECTIONS = {
+#     'default': {
+#         'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
+#         'URL': 'http://127.0.0.1:9200/',
+#         'INDEX_NAME': 'tgn',
+#     },
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

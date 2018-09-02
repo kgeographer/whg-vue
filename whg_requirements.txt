@@ -1,12 +1,15 @@
 Django==2.1
 django-filter==2.0.0
 django-geojson==2.11.0
+django-haystack==2.8.1
 django-leaflet==0.24.0
 django-webpack-loader==0.6.0
 djangorestframework==3.8.2
+elasticsearch==6.3.1
 Pillow==5.0.0
 pprint==0.1
 psycopg2==2.7.5
 pytz==2018.5
 Shapely==1.6.4.post2
 six==1.11.0
+urllib3==1.23

@@ -20,6 +20,7 @@
     "typeahead.js": "^0.11.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vue-typeahead": "^2.3.2",
     "webpack-bundle-tracker": "^0.3.0"
   },
   "devDependencies": {

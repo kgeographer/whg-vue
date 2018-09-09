@@ -41,18 +41,14 @@ export default {
   data () {
     return {
       src: 'http://localhost:9200/linkedplaces/place/_search',
-      // src: 'https://typeahead-js-twitter-api-proxy.herokuapp.com/demo/search',
       limit: 6,
       minChars: 3,
-      msg: 'Map/Search'
-      // data:{
-      //   q: 'Denver'
-      // }
-      // data:{
-      //   representative_title: 'Aachen'
-      //   // "suggest":{"place-suggest":{"prefix":"den","completion" : {"field" : "suggest"}}}
-      // },
-      // queryParamName: ''
+      msg: 'Map/Search',
+      data:{
+        analyze_wildcard: 'true',
+        // df: 'suggest:',
+      },
+      // queryParamName: 'q'
     }
   },
 
@@ -61,6 +57,8 @@ export default {
       window.location.href = 'http://twitter.com/' + item.screen_name
     },
     prepareResponseData (data) {
+      // return data.suggest.place_suggest
+      // console.log(data.suggest.place_suggest)
       console.log(data.hits.hits)
       return data.hits.hits
     }
@@ -84,7 +82,7 @@ export default {
   }
 
   .Typeahead__input {
-    width: 100%;
+    width: 30%;
     font-size: 14px;
     color: #2c3e50;
     line-height: 1.42857143;

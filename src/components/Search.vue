@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <h1>{{ msg }}</h1>
-    <input type="text" class="form-control" id="name_search" placeholder="Enter place name">
+    <input type="text" class="typeahead form-control" id="name_search" placeholder="Enter place name">
   </div>
 </template>
 

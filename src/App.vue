@@ -13,10 +13,9 @@
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
-// console.clear()
+  export default {
+    name: 'App'
+  }
 </script>
 
 <style>
@@ -28,5 +27,5 @@ export default {
   color: #2c3e50;
   margin-top: 20px;
 }
-@import'~bootstrap/dist/css/bootstrap.css'
+/* @import'~bootstrap/dist/css/bootstrap.css' */
 </style>

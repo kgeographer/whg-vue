@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'About',
+  name: 'Blog',
   data () {
     return {
       msg: 'WHG Blog'

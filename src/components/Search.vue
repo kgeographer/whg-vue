@@ -24,13 +24,10 @@
         <span class="name" v-text="item._source.representative_title"></span>
         <!-- <span class="name" v-text="item.name"></span> -->
         <span class="screen-name" v-text="item._source.id"></span>
+        <span class="screen-name" v-text="item._source.suggest"></span>
       </li>
     </ul>
   </div>
-  <!-- <div class="content">
-    <h1>{{ msg }}</h1>
-    <input type="text" class="form-control" id="name_search" placeholder="Enter place name">
-  </div> -->
 </template>
 
 <script>

@@ -13,6 +13,10 @@ urlpatterns = [
     url(r'^api/', include('backend.urls')),
     url(r'^api-auth/', include('rest_framework.urls')),
 
+    # djoser
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+
     # catchall to Vue single page app
     url(r'^.*$', TemplateView.as_view(template_name='whgdj/spa.html'), name='home'),
 

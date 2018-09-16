@@ -3,6 +3,9 @@
   <body>
     {% block content %}
     {% endblock %}
+    <!-- for production? -->
+    <!-- {# render_bundle 'manifest' #}
+    {# render_bundle 'vendor' #} -->
     {% render_bundle 'app' %}
   </body>
 </html>

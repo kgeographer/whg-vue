@@ -27,10 +27,6 @@
         <span class="screen-name" v-text="item._source.is_conflation_of[0]['types'][0]['label']+
           ' ('+item._source.is_conflation_of[0]['types'][0]['id']+')'"></span>
         <span class="screen-name" v-text="'Attested: [start: '+item._source.minmax['start']+'; end: '+item._source.minmax['end']+']'"></span>
-        <!-- <span class="screen-name" v-text="item._id"></span> -->
-        <!-- <span class="name" v-text="item._source.representative_title"></span>
-        <span class="screen-name" v-text="item._source.id"></span>
-        <span class="screen-name" v-text="item._source.suggest"></span> -->
       </li>
     </ul>
   </div>
@@ -45,7 +41,6 @@ export default {
   data () {
     return {
       src: 'http://localhost:9200/spine/_search',
-      // src: 'http://localhost:9200/linkedplaces/place/_search',
       limit: 6,
       minChars: 3,
       msg: 'Search',
@@ -64,7 +59,7 @@ export default {
     prepareResponseData (data) {
       // return data.suggest.place_suggest
       // console.log(data.suggest.place_suggest)
-      console.log(data.hits.hits)
+      console.log('hits',data.hits.hits)
       return data.hits.hits
     }
   }

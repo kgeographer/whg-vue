@@ -15,5 +15,4 @@ urlpatterns = [
 
     # catchall to Vue single page app
     url(r'^.*$', TemplateView.as_view(template_name='whgdj/spa.html'), name='home'),
-
 ]

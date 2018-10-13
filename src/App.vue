@@ -6,6 +6,7 @@
     <router-link to="/maps">Maps</router-link> ::
     <router-link to="/contribute">Contribute</router-link> ::
     <router-link to="/usingapi">Using the API</router-link> ::
+    <router-link to="/api/places">Place API</router-link> ::
     <router-link to="/about">About</router-link>
     <!-- <router-link to="/blog">Blog</router-link> :: -->
   </div>

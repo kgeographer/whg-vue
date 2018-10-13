@@ -21,6 +21,7 @@ export default new Router({
     {path: '/maps', component: Maps},
     {path: '/about', component: About},
     {path: '/', component: Home},
+    {path: '/api/places'},
     // {path: '/blog', component: Blog},
   ]
 })

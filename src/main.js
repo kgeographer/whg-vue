@@ -15,5 +15,5 @@ new Vue({
   router,
   mode: 'history',
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
 })

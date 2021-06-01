@@ -12,4 +12,4 @@ psycopg2==2.7.5
 pytz==2018.5
 Shapely==1.6.4.post2
 six==1.11.0
-urllib3==1.23
+urllib3==1.26.5
